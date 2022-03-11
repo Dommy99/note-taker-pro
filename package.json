@@ -1,0 +1,23 @@
+{
+  "name": "note-taker-pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dommy99/note-taker-pro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dommy99/note-taker-pro/issues"
+  },
+  "homepage": "https://github.com/Dommy99/note-taker-pro#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
