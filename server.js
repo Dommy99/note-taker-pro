@@ -14,7 +14,6 @@ app.use(express.json());
   
 // funtions to handle data requests
 function filterQuery(query, notesArray) {
-    let finishedNotesArray = [];
     let filteredResults = notesArray;
     if (query.title) {
       filteredResults = filteredResults.filter(note => note.title === query.title);
@@ -79,6 +78,11 @@ app.get('/api/notes', (req, res) => {
       } else {const note = newNote(req.body, notes);
     res.json(note);}    
   });
+
+ app.delete('/api/notes/:id', (req, res) => {
+    const result = findId(req.params.id, notes);
+
+ });
 
 // gets the html,css files
 app.get('/', (req, res) => {
